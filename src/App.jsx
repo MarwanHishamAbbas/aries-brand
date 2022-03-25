@@ -1,4 +1,4 @@
-import Hero from "./components/hero/Hero";
+import Hero from "./components/landing/hero/Hero";
 import Header from "./layout/Header";
 import Layout from "./layout/Layout";
 const App = () => {
