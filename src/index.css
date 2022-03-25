@@ -64,7 +64,7 @@ body {
   h4,
   h5,
   h6 {
-    @apply font-sans;
+    @apply font-sans capitalize;
   }
   h1 {
     @apply text-[42px] sm:text-[82px] font-bold;
@@ -83,6 +83,9 @@ body {
   }
   h6 {
     @apply text-[12px] sm:text-[16px];
+  }
+  p {
+    @apply font-body text-body text-base;
   }
 
   section {

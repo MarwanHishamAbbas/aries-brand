@@ -8,7 +8,7 @@ const Hero = () => {
         <span className="grad-text"> Artificial Intelligence</span> <br />
         Startup.
       </h1>
-      <ScrollDown className="text-7xl mt-20 animate-bounce" />
+      <ScrollDown className="text-7xl mt-20 animate-bounce relative -z-10" />
     </section>
   );
 };

@@ -9,6 +9,7 @@ module.exports = {
       dark: "#232526",
       primary: "#99A9FF",
       secondary: "#5CE4CF",
+      body: "#B8B8B8",
     },
     extend: {},
   },
