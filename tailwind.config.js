@@ -5,7 +5,9 @@ module.exports = {
       sans: "'Ginora Sans', sans-serif",
       body: "'Gilroy-Regular', sans-serif",
     },
-    colors: {},
+    colors: {
+      dark: "#232526",
+    },
     extend: {},
   },
   plugins: [],

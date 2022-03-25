@@ -1,6 +1,11 @@
+import Header from "./layout/Header";
+import Layout from "./layout/Layout";
 const App = () => {
   return (
-    <h1 className="text-5xl font-sans font-bold">Artificial Intelligence</h1>
+    <Layout>
+      <Header />
+      <h1 className="font-sans font-bold">Artificial Intelligence</h1>
+    </Layout>
   );
 };
 
