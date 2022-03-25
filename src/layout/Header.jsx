@@ -22,7 +22,7 @@ const navigation = [
 const Header = () => {
   return (
     <header className="bg-dark max-w-7xl font-sans px-4 flex justify-between items-center h-20 fixed top-0 right-0 left-0 sm:relative sm:px-8">
-      <nav className="flex justify-between w-full items-center">
+      <nav className="flex justify-between w-full items-center h-full">
         <Logo className="text-9xl sm:hidden" />
         <Disclosure as="nav">
           {({ open }) => (
@@ -48,7 +48,7 @@ const Header = () => {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Disclosure.Panel className="sm:hidden relative z-50">
-                  <div className="px-7 py-5 space-y-1 shadow-lg absolute -left-32 top-9 bg-dark rounded-lg">
+                  <div className="px-7 py-5 space-y-1 shadow-lg absolute -left-32 top-9 bg-dark rounded-md">
                     {navigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
@@ -64,7 +64,7 @@ const Header = () => {
             </>
           )}
         </Disclosure>
-        <div className="hidden space-x-10 sm:w-full sm:flex sm:flex-1 sm:items-center sm:justify-between">
+        <div className="hidden w-full h-full sm:flex sm:items-center sm:justify-between">
           <div className="space-x-10">
             <a
               href="/"
@@ -79,9 +79,7 @@ const Header = () => {
               {navigation[1].name}
             </a>
           </div>
-          <div>
-            <Logo className="text-9xl" />
-          </div>
+          <Logo className="text-9xl" />
           <div className="space-x-10">
             <a
               href="/"

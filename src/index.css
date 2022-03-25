@@ -84,6 +84,10 @@ body {
   h6 {
     @apply text-[12px] sm:text-[16px];
   }
+
+  section {
+    @apply mb-24 sm:mb-48;
+  }
 }
 
 .hero {
