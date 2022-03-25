@@ -40,7 +40,6 @@
 }
 
 .grad-text {
-  font-size: 82px;
   background: conic-gradient(
     from 180deg at 50% 50%,
     #66ffe6 -160.13deg,
@@ -56,4 +55,38 @@
 body {
   color: #f4f4f4;
   background: #1d1d1d;
+}
+
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans;
+  }
+  h1 {
+    @apply text-[42px] sm:text-[82px] font-bold;
+  }
+  h2 {
+    @apply text-[36px] sm:text-[62px];
+  }
+  h3 {
+    @apply text-[26px] sm:text-[44px];
+  }
+  h4 {
+    @apply text-[20px] sm:text-[26px] font-semibold;
+  }
+  h5 {
+    @apply text-[14px] sm:text-[22px];
+  }
+  h6 {
+    @apply text-[12px] sm:text-[16px];
+  }
+}
+
+.hero {
+  background: url(./assets/grad-background.svg);
+  background-size: cover;
 }

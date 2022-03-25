@@ -42,13 +42,13 @@ const Header = () => {
                     </Disclosure.Button>
                   </div>
                   <div className="flex items-center justify-center ">
-                    <div className="hidden sm:block sm:ml-6">
+                    <div className="hidden sm:block">
                       <div className="flex space-x-10">
                         {navigation.map((item) => (
                           <a
                             key={item.name}
                             href="/"
-                            className=" py-2 rounded-md text-sm transition-all"
+                            className="py-2 rounded-md text-sm transition-all"
                           >
                             {item.name}
                           </a>
@@ -73,8 +73,7 @@ const Header = () => {
                       <Disclosure.Button
                         key={item.name}
                         href="/"
-                        className=" hover:bg-gray-dark
-                  block px-3 py-2 rounded-md text-base font-medium"
+                        className="  px-3 py-2"
                       >
                         {item.name}
                       </Disclosure.Button>
