@@ -1,4 +1,4 @@
-import { ReactComponent as ScrollDown } from "../../../assets/scroll-down.svg";
+import { ReactComponent as ScrollDown } from "../../assets/scroll-down.svg";
 
 const Hero = () => {
   return (

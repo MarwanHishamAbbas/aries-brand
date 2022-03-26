@@ -82,7 +82,7 @@ body {
     @apply text-[14px] sm:text-[22px];
   }
   h6 {
-    @apply text-[12px] sm:text-[16px];
+    @apply text-[12px] sm:text-[16px] tracking-[30%] text-body;
   }
   p {
     @apply font-body text-body text-base;

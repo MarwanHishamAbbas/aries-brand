@@ -1,4 +1,5 @@
-import Hero from "./components/landing/hero/Hero";
+import Funding from "./components/landing/Funding";
+import Hero from "./components/landing/Hero";
 import Program from "./components/landing/Program";
 import Header from "./layout/Header";
 import Layout from "./layout/Layout";
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <Hero />
       <Program />
+      <Funding />
     </Layout>
   );
 };
