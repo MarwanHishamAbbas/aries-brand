@@ -6,6 +6,15 @@
 @font-face {
   font-family: "Ginora Sans";
   font-style: normal;
+  font-weight: 300;
+  src: local("Ginora Sans"),
+    url("https://fonts.cdnfonts.com/s/18654/Ginóra Sans Light.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Ginora Sans";
+  font-style: normal;
   font-weight: 400;
   src: local("Ginora Sans"),
     url("https://fonts.cdnfonts.com/s/18654/Ginóra Sans Regular.woff")
@@ -50,6 +59,25 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.brand:hover h4 {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #66ffe6 -160.13deg,
+    #8093ff 42.37deg,
+    #66ffe6 199.87deg,
+    #8093ff 402.37deg
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand:hover svg path {
+  fill: #99a9ff;
+}
+.brand:hover {
+  background: #232526;
 }
 
 html {

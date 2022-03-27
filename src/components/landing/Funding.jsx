@@ -16,7 +16,7 @@ const Funding = () => {
           development team and a total investment package of $270,000.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between space-y-20 md:space-x-20 items-center mb-12">
+      <div className="flex flex-col md:flex-row justify-between space-y-20 md:space-x-20 items-center mb-28">
         <div className="relative w-full -z-10">
           <img src={funding_1} alt="Moon" className="w-[80%] sm:w-[75%]" />
           <img
