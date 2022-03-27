@@ -1,6 +1,6 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { XIcon } from "@heroicons/react/outline";
+import { MdOutlineClose } from "react-icons/md";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { ReactComponent as Menu } from "../assets/menu.svg";
 
@@ -31,7 +31,10 @@ const Header = () => {
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="py-2">
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MdOutlineClose
+                      className="block h-6 w-6"
+                      aria-hidden="true"
+                    />
                   ) : (
                     <Menu className="block h-6 w-6" aria-hidden="true" />
                   )}
