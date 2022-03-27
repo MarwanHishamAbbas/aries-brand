@@ -52,6 +52,10 @@
   background-clip: text;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #f4f4f4;
   background: #1d1d1d;
@@ -82,7 +86,7 @@ body {
     @apply text-[14px] sm:text-[22px];
   }
   h6 {
-    @apply text-[12px] sm:text-[16px] tracking-[30%] text-body;
+    @apply text-[12px] sm:text-[16px] tracking-[8px] text-body;
   }
   p {
     @apply font-body text-body text-base;

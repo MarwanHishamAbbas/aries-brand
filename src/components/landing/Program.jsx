@@ -1,5 +1,7 @@
 import program1 from "../../assets/program-1.png";
 import program2 from "../../assets/program-2.png";
+import { BsArrowRight } from "react-icons/bs";
+
 const Program = () => {
   return (
     <section>
@@ -21,10 +23,11 @@ const Program = () => {
         pre-iPO.
       </p>
       <a
-        className="text-primary text-base font-sans inline-flex uppercase mt-7"
+        className="text-primary text-base font-sans inline-flex space-x-3 hover:space-x-7 items-center uppercase mt-7"
         href="/"
       >
-        View Program
+        <span>View Program</span>
+        <BsArrowRight className="text-xl text-secondary transition-all flex" />
       </a>
     </section>
   );

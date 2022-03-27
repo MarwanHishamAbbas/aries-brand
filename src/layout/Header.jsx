@@ -1,21 +1,21 @@
 import { Disclosure, Transition } from "@headlessui/react";
-import { Fragment } from "react/cjs/react.production.min";
+import { Fragment } from "react";
 import { XIcon } from "@heroicons/react/outline";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 import { ReactComponent as Menu } from "../assets/menu.svg";
 
 const navigation = [
   {
-    name: "PROGRAM",
+    name: "program",
   },
   {
-    name: "FUNDING",
+    name: "funding",
   },
   {
-    name: "JOBS",
+    name: "jobs",
   },
   {
-    name: "MENU",
+    name: "menu",
   },
 ];
 
@@ -48,15 +48,15 @@ const Header = () => {
                 leaveTo="transform opacity-0 scale-95"
               >
                 <Disclosure.Panel className="sm:hidden relative z-50">
-                  <div className="px-7 py-5 space-y-1 shadow-lg absolute -left-32 top-9 bg-dark rounded-md">
+                  <div className="px-7 py-5 space-y-1 flex flex-col shadow-lg absolute -left-32 top-9 bg-dark rounded-md">
                     {navigation.map((item) => (
-                      <Disclosure.Button
+                      <a
                         key={item.name}
-                        href="/"
-                        className="px-3 py-2"
+                        href={`#${item.name}`}
+                        className="px-3 py-2 uppercase"
                       >
                         {item.name}
-                      </Disclosure.Button>
+                      </a>
                     ))}
                   </div>
                 </Disclosure.Panel>
@@ -64,16 +64,16 @@ const Header = () => {
             </>
           )}
         </Disclosure>
-        <div className="hidden w-full h-full sm:flex sm:items-center sm:justify-between">
+        <div className="hidden w-full h-full sm:flex sm:items-center sm:justify-between uppercase">
           <div className="space-x-10">
             <a
-              href="/"
+              href="#program"
               className="py-2 text-base hover:text-primary transition-all"
             >
               {navigation[0].name}
             </a>
             <a
-              href="/"
+              href="#funding"
               className="py-2 text-base hover:text-primary transition-all"
             >
               {navigation[1].name}
@@ -82,7 +82,7 @@ const Header = () => {
           <Logo className="text-9xl" />
           <div className="space-x-10">
             <a
-              href="/"
+              href="#jobs"
               className="py-2 text-base hover:text-primary transition-all"
             >
               {navigation[2].name}
