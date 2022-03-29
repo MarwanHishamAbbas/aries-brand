@@ -47,7 +47,7 @@ const Sponsorship = () => {
   return (
     <section>
       <Line className="w-full" />
-      <h2 className="mt-10 sm:mt-14 mb-28">our Investment Portfolios.</h2>
+      <h2 className="mt-10 sm:mt-14 mb-20">our Investment Portfolios.</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-10 sm:gap-y-10">
         {BRANDS.map((brand) => (
           <div

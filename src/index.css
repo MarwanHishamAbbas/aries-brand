@@ -116,6 +116,23 @@ body::-webkit-scrollbar-track {
   background-clip: text;
 }
 
+.contact-form input {
+  padding: 20px;
+  outline: none;
+  border-bottom: 1px solid #565656;
+  background: transparent;
+  position: relative;
+  z-index: -1;
+}
+
+.contact-form input::placeholder {
+  font-size: 20px;
+}
+
+.after-span {
+  background: linear-gradient(90deg, #99a9ff 0%, #5ce4cf 100%);
+}
+
 @layer components {
   h1,
   h2,

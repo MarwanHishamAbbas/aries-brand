@@ -33,10 +33,10 @@ const Jobs = () => {
   return (
     <section id="jobs">
       <Line className="w-full" />
-      <h2 className="mt-10 md:mt-14 mb-28">latest portfolio jobs.</h2>
+      <h2 className="mt-10 md:mt-14 mb-20">latest portfolio jobs.</h2>
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-20 md:space-y-0">
         <div className="w-full flex flex-col space-y-5 md:basis-[30%] md:ml-32">
-          <h3 className="mb-10">job categories</h3>
+          <h3 className="mb-7">job categories</h3>
           {CATEGROY.map((item) => {
             return (
               <h4
