@@ -1,5 +1,6 @@
 import Funding from "./components/landing/Funding";
 import Hero from "./components/landing/Hero";
+import Jobs from "./components/landing/Jobs";
 import Program from "./components/landing/Program";
 import Sponsorship from "./components/landing/Sponsorship";
 import Team from "./components/landing/Team";
@@ -14,6 +15,7 @@ const App = () => {
       <Funding />
       <Sponsorship />
       <Team />
+      <Jobs />
     </Layout>
   );
 };

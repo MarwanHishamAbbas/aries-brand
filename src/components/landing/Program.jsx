@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Program = () => {
   return (
-    <section>
+    <section id="program">
       <div className="relative -z-10">
         <img className="w-[90%] sm:w-[70%] sm:mx-auto" src={program1} alt="" />
         <img
