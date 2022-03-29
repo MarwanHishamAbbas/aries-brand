@@ -103,6 +103,19 @@ body::-webkit-scrollbar-track {
   background: #232526;
 }
 
+.job-title:hover h3 {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #66ffe6 -160.13deg,
+    #8093ff 42.37deg,
+    #66ffe6 199.87deg,
+    #8093ff 402.37deg
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @layer components {
   h1,
   h2,
@@ -128,7 +141,7 @@ body::-webkit-scrollbar-track {
     @apply text-[14px] sm:text-[22px];
   }
   h6 {
-    @apply text-[12px] sm:text-[16px] tracking-[8px] text-body;
+    @apply text-[12px] sm:text-[16px] tracking-[8px] text-body uppercase;
   }
   p {
     @apply font-body text-body text-base;
