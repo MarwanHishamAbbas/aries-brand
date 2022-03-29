@@ -2,6 +2,7 @@ import Funding from "./components/landing/Funding";
 import Hero from "./components/landing/Hero";
 import Program from "./components/landing/Program";
 import Sponsorship from "./components/landing/Sponsorship";
+import Team from "./components/landing/Team";
 import Header from "./layout/Header";
 import Layout from "./layout/Layout";
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Program />
       <Funding />
       <Sponsorship />
+      <Team />
     </Layout>
   );
 };

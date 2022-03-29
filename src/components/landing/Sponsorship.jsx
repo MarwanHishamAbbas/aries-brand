@@ -50,7 +50,10 @@ const Sponsorship = () => {
       <h2 className="mt-10 sm:mt-14 mb-28">our Investment Portfolios.</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-10 sm:gap-y-10">
         {BRANDS.map((brand) => (
-          <div className="inline-flex justify-center px-4 py-8 items-center space-x-3 transition-all  brand">
+          <div
+            key={brand.name}
+            className="inline-flex justify-center px-4 py-8 items-center space-x-3 transition-all cursor-default brand"
+          >
             <span className="text-2xl transition-all">{brand.icon}</span>
             <h4 className="uppercase text-body font-light">{brand.name}</h4>
           </div>

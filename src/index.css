@@ -48,6 +48,29 @@
     url("https://fonts.cdnfonts.com/s/16219/Gilroy-Regular.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #f4f4f4;
+  background: #1d1d1d;
+  scrollbar-color: #999 #333;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* Mostly for vertical scrollbars */
+  height: 10px; /* Mostly for horizontal scrollbars */
+}
+body::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: #232526;
+}
+body::-webkit-scrollbar-track {
+  /* Background */
+  background: rgb(99, 98, 98);
+}
+
 .grad-text {
   background: conic-gradient(
     from 180deg at 50% 50%,
@@ -78,15 +101,6 @@
 }
 .brand:hover {
   background: #232526;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  color: #f4f4f4;
-  background: #1d1d1d;
 }
 
 @layer components {
